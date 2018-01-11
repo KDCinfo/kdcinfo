@@ -1,3 +1,8 @@
+# From Zurb Foundation 6 install (along with others already noted below)
+.DS_Store
+dist
+*.swp
+
 # Logs
 logs
 *.log
@@ -56,4 +61,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

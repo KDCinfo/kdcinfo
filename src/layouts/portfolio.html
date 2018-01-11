@@ -1,0 +1,47 @@
+<!doctype html>{{!-- This is the base layout for your project, and will be used on every page. --}}
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KDC-Info: Personal Portfolio for Keith D Commiskey</title>
+        <meta name="description" content="Personal Portfolio for Keith D Commiskey: Personal Work, Archived Goodies, About Me">
+        <meta name="keywords" content="Personal Portfolio,Keith D Commiskey,Personal Work,Goodies,Archived Goodies,About Me,Portfolio,Commiskey,KeithC,KeithDC">
+        <meta name='author' content='Keith D Commiskey' />
+        <link rel="stylesheet" href="{{root}}assets/css/app.css">
+        <style type="text/css">h1 { margin-bottom: 0; padding-bottom: 0; }</style>
+
+        {{> favicon}}
+        {{> googlea}}
+    </head>
+    <body>
+
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> header-kdc}}
+        {{> body}}
+        {{> footer-kdc}}
+
+        <a data-reveal-id="contactKDC" id="contactKDCid"></a>
+        <div id="contactKDC" class="reveal-modal medium revealClassContact" data-reveal>
+            <a class="close-reveal-modal">&#215;</a>
+            <p class="contactKDCformP"></p>
+            <span class="displayNone" id="whichForm"></span>
+        </div>
+
+        <span id="isMobile"></span>
+
+        <script src="{{root}}assets/js/app.js"></script>
+        <script type="text/javascript">
+            (function ($) {
+                "use strict";
+                $('#book1_header').on('click', function() {
+                    $('#book1_spine').trigger('click');
+                    return false;
+                });
+                // setTimeout( function() {
+                //     $('#book1_spine').trigger('click');
+                // }, 1000)
+            }(jQuery));
+        </script>
+    </body>
+</html>
