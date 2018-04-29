@@ -25,6 +25,8 @@ This will, initially, only include my [Portfolio](https://kdcinfo.com) site, and
     - Copied over images and icons from my Foundation 5 (F5) site.
     - Added in a few scraps of custom SCSS variables, and my F5 custom kdc.scss file.
 
-    [2018-04-27] Security fix: First pass
+    [2018-04-27] Security fix: ~~First pass~~ Completed
     - Two holdouts; `browser-sync` and `node-sass`
     - Opened ticket with [https://github.com/zurb/foundation-sites/issues/11211](Zurb: Foundation)
+    - Committed files to GitHub, and the warning resolved.
+    - Closed ticket with [https://github.com/zurb/foundation-sites/issues/11211](Zurb: Foundation).
